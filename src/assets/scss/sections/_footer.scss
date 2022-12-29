@@ -1,0 +1,221 @@
+.footer {
+    margin-top: 37px;
+    background-color: #3B4D4F;
+    position: relative;
+
+    &__wrapper {
+        max-width: 50%;
+    }
+
+    &__block {
+        padding: 11px 15px 19px 0px;
+
+        &-wrap {
+            display: flex;
+            margin-top: 21px;
+            max-width: 605px;
+            justify-content: space-between;
+        }
+
+        &-spec {
+            &_title {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 14px;
+                color: #FFFFFF;
+            }
+
+            &_list {
+                margin-top: 20px;
+                list-style: none;
+                max-width: 257px;
+                max-height: 285px;
+
+                li+li {
+                    margin-top: 10px;
+                }
+
+                a {
+                    color: #fff;
+                    font-size: 10px;
+                    line-height: 10px;
+                }
+            }
+        }
+    }
+
+    &__title {
+        color: #fff;
+        text-align: left;
+    }
+
+    &__info {
+        font-size: 14px;
+        line-height: 18px;
+        color: #FFFFFF;
+
+        &-item {
+            display: flex;
+            align-items: center;
+
+            span {
+                max-width: 222px;
+            }
+
+            img {
+                margin-right: 8px;
+            }
+
+            a {
+                font-size: 14px;
+                line-height: 18px;
+                color: #FFFFFF;
+            }
+        }
+
+        div+div {
+            margin-top: 20px;
+        }
+    }
+
+    &__soc {
+        margin-top: 18px;
+
+        &_wa {
+            width: 20px;
+            height: 20px;
+        }
+
+        &_vk {
+            width: 37px;
+            height: 20px;
+            margin-left: 11px;
+        }
+    }
+
+    &__form {
+        width: 210px;
+        margin-top: 18px;
+
+        input {
+            width: 100%;
+            margin-bottom: 6px;
+        }
+
+        .privacy {
+            text-align: left;
+        }
+    }
+
+    &__map {
+        width: 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+
+        &__map {
+            position: static;
+            width: 100%;
+            order: -1;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__block-wrap {
+            max-width: 100%;
+            width: 644px;
+        }
+
+        &__info {
+            font-size: 12px;
+            line-height: 15px;
+        }
+
+        &__form {
+            button {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: $mobileBreakpoint) {
+    .footer {
+        &__block {
+            padding: 11px;
+
+            &-spec {
+                margin-top: 20px;
+
+                &_title {
+                    text-align: center;
+                }
+            }
+
+            &-contacts {
+                margin-top: 20px;
+                text-align: center;
+            }
+        }
+
+        &__block-wrap {
+            display: block;
+            margin: 0 auto;
+            width: 280px;
+        }
+
+        &__info {
+            font-size: 12px;
+            line-height: 15px;
+
+            &-item {
+                flex-direction: column;
+                align-items: center;
+                img {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        &__form {
+            margin: 28px auto 0;
+
+            input,
+            button {
+                width: 100%;
+                height: 45px !important;
+            }
+        }
+
+        &__soc_wa {
+            width: 32px;
+            height: 32px;
+        }
+
+        &__soc_vk {
+            width: 60px;
+            height: 32px;
+        }
+    }
+}

@@ -1,0 +1,261 @@
+.licenses {
+    margin-top: 12px;
+    padding-top: 44px;
+    overflow: hidden;
+
+    &__wrapper {
+        position: relative;
+        padding-top: 85px;
+        background: #E8E8E8;
+        padding-bottom: 85px;
+    }
+
+    &__whiteblock {
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        width: 1240px;
+        height: 100px;
+        background-color: #fff;
+        top: -50px;
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    &__inner {
+        max-width: 1240px;
+        margin: 50px auto 0;
+        display: flex;
+    }
+
+    &__desc {
+        margin-right: 11px;
+        flex: 1 0 33%;
+
+        &-title {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            color: #404040;
+        }
+
+        &-text {
+            font-size: 14px;
+            line-height: 16px;
+            color: #404040;
+            margin-top: 14px;
+        }
+
+        &-check {
+            margin-top: 24px;
+        }
+
+        &-btn {
+            margin-top: 12px;
+        }
+
+        &-call {
+            margin-top: 25px;
+            font-size: 14px;
+            line-height: 16px;
+            color: #404040;
+        }
+
+        &-phone {
+            margin-top: 12px;
+        }
+    }
+
+    &__slider {
+        max-width: 100%;
+
+        &-item {
+            background: #E8E8E8;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+            padding: 20px 54px;
+            margin: 0 15px;
+        }
+
+        .slick-list {
+            height: 480px;
+        }
+
+        .slick-track {
+            margin: 0 4px;
+        }
+    }
+}
+
+
+
+
+@media (max-width: 1280px) {
+    .licenses {
+        margin-top: 8px;
+
+        &__wrapper {
+            padding-top: 85px;
+            padding-bottom: 42px;
+        }
+
+        &__whiteblock {
+            top: 0;
+            width: 644px;
+            height: 56px;
+        }
+
+        &__inner {
+            max-width: 645px;
+            margin: 23px auto 0;
+        }
+
+        &__desc {
+            flex: 1 0 40%;
+
+            &-title {
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+            &-text {
+                font-size: 12px;
+                line-height: 15px;
+            }
+
+            &-check {
+                margin-top: 26px;
+            }
+
+            &-btn {
+                margin-top: 6px;
+            }
+
+            &-call {
+                text-align: center;
+            }
+
+            &-phone {
+                text-align: center;
+                margin-top: 12px;
+            }
+        }
+
+        &__slider {
+            max-width: 200%;
+
+            &-item {
+                padding: 16px 44px;
+
+                img {
+                    width: 244px;
+                    height: 354px;
+                }
+            }
+
+            .slick-list {
+                height: 390px;
+            }
+
+            .slick-dots {
+                justify-content: flex-start;
+                margin-top: 18px;
+                margin-left: calc(332px / 2.5);
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: $mobileBreakpoint) {
+
+    .licenses {
+        margin-top: 22px;
+        padding-top: 28px;
+
+        &__wrapper {
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+
+        &__whiteblock {
+            top: 0;
+            width: 280px;
+            height: 24px;
+        }
+
+        &__inner {
+            display: block;
+            margin: 16px auto 10px;
+            max-width: 282px;
+        }
+
+        &__desc {
+            text-align: center;
+            margin: 0 auto;
+
+            &-title {
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+            &-text {
+                font-size: 12px;
+                line-height: 15px;
+                margin-top: 21px;
+                max-width: 277px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            &-check {
+                text-align: center;
+                margin-top: 18px;
+            }
+
+            &-btn {
+                margin-top: 10px;
+            }
+
+            &-call {
+                max-width: 285px;
+                text-align: center;
+                display: block;
+                margin: 18px auto 0;
+
+                br {
+                    display: none;
+                }
+            }
+
+            &-phone {
+                text-align: center;
+                margin-top: 12px;
+            }
+        }
+
+        &__slider {
+            margin-top: 18px;
+            width: 200%;
+
+            &-item {
+                padding: 13px 37px;
+
+                img {
+                    width: 206px;
+                    height: 299px;
+                }
+            }
+
+            .slick-list {
+                height: 330px;
+            }
+
+            .slick-dots {
+                justify-content: flex-start;
+                margin-top: 18px;
+                margin-left: calc(280px / 2.5);
+            }
+        }
+    }
+}

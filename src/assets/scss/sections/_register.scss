@@ -1,0 +1,130 @@
+.register {
+
+    &__inner {
+        margin: 37px auto 0;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1240px;
+    }
+
+    &__desc {
+        max-width: 323px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #404040;
+    }
+
+    &__text {
+        margin-top: 24px;
+    }
+
+    &__form {
+        display: grid;
+        grid-template-columns: repeat(2, 240px);
+        gap: 10px 10px;
+
+        &-privacy {
+            .privacy {
+                color: #404040;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1280px) {
+    .register {
+
+        &__inner {
+            margin: 25px auto 0;
+            max-width: 644px;
+        }
+
+        &__title {
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            margin-top: 13px;
+        }
+
+        &__text {
+            margin-top: 0;
+            font-size: 12px;
+            line-height: 15px;
+            max-width: 182px;
+        }
+
+        &__img {
+            margin-top: 12px;
+
+            img {
+                width: 187px;
+                height: 158px;
+            }
+        }
+
+        &__form {
+            grid-template-columns: repeat(2, 219px);
+
+            input,
+            button {
+                height: 45px !important;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: $mobileBreakpoint) {
+
+    .register {
+
+        &__inner {
+            margin: 13px auto 0;
+            max-width: 280px;
+            display: block;
+        }
+
+        &__title {
+            max-width: 280px;
+            text-align: center;
+            margin: 13px auto 0;
+
+            br {
+                display: none;
+            }
+        }
+
+        &__desc {
+            display: flex;
+        }
+
+        &__img {
+            margin-top: 0;
+            margin-left: auto;
+
+            img {
+                width: 137px;
+                height: 112px;
+            }
+        }
+
+        &__form {
+            grid-template-columns: repeat(2, 137px);
+
+            input,
+            button {
+                height: 45px !important;
+            }
+        }
+    }
+}

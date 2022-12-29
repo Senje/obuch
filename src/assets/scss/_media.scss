@@ -1,0 +1,102 @@
+@media (max-width: 1280px) {
+
+    input[type=text] {
+        height: 38px;
+    }
+
+    .header__input {
+        width: 178px;
+    }
+
+    .white__btn {
+        width: 178px;
+        height: 38px;
+        padding: 10px 0 9px;
+    }
+
+    .title {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .default_pt {
+        padding-top: 27px;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .container {
+        max-width: 644px;
+    }
+
+    .title-sm {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .circle {
+        background-position: 50% 450px;
+        background-size: 1197px 1197px;
+    }
+
+    .tablet {
+        display: block;
+    }
+}
+
+@media (max-width: $mobileBreakpoint) {
+    .title {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .super-mobile {
+        display: block;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    .default_pt {
+        padding-top: 17px;
+    }
+
+    input,
+    button,
+    select {
+        font-size: 12px;
+    }
+
+    select {
+        padding: 0 5px;
+        background-position-x: calc(100% - 5px);
+    }
+
+    input {
+        &::placeholder {
+            font-size: 12px;
+        }
+    }
+
+    .container {
+        max-width: 280px;
+    }
+
+    .title-sm {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .circle {
+        background-position: 50% 520px;
+        background-size: 890px 890px;
+    }
+}

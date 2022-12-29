@@ -1,0 +1,138 @@
+$mobileBreakpoint: '690px';
+
+@import './fonts';
+@import './ui';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #3B4D4F;
+}
+
+#wrapper {
+  position: relative;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #404040;
+  line-height: 16px;
+}
+
+body.locked {
+  overflow: hidden;
+}
+
+.privacy {
+  font-size: 7px;
+  line-height: 9px;
+  margin-top: 4px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration-line: underline;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #404040;
+  text-align: center
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.default_pt {
+  padding-top: 37px;
+}
+
+.title-sm {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #404040;
+}
+
+.circle {
+  background: url('../images/how_bg.png') no-repeat;
+  background-position: 50% 150px;
+}
+
+.phone_brown {
+
+  a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #744A3C;
+    margin-left: 13px;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+}
+
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+.super-mobile {
+  display: none
+}
+
+.tablet {
+  display: block;
+}
+
+.custom-scroll {
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+    border-radius: 8px;
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: linear-gradient(0deg, #9C9895, #9C9895), #FFFFFF;
+    border-radius: 8px;
+  }
+}
+
+.disable_link {
+  a {
+    pointer-events: none
+  }
+}
+
+@import './sections/header';
+@import './sections/advantages';
+@import './sections/documents';
+@import './sections/licenses';
+@import './sections/register';
+@import './sections/reviews';
+@import './sections/how';
+@import './sections/faq';
+@import './sections/benefits';
+@import './sections/feedback';
+@import './sections/footer';
+@import './sections/prof';
+@import './sections/feedback_dark';
+@import './media';
